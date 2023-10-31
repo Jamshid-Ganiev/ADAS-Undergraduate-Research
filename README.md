@@ -15,17 +15,27 @@ To maintain a clean and isolated Python environment for your "ADAS-Undergraduate
 cd ADAS-Undergraduate-Research/
 
 ## Create a Virtual Environment
+
+```
 python -m venv venv
+```
 
 ## Activate the Virtual Environment
-## On Windows:
+### On Windows:
+
+```
 .\<env_name>\Scripts\activate
+```
+
 ## On macOS and Linux:
+```
 source venv/bin/activate
+```
 
 ## Install Project Dependencies from requirements.txt
+```
 pip install -r requirements.txt
-
+```
 
 This project follows a simplistic approach in terms of how to run it. Only 2 files are needed in order to get it running.
 * [laneDetection](laneDetection.py) is the only file to perform image processing nad detecting lanes
