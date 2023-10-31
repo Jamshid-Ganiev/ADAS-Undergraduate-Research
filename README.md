@@ -11,7 +11,6 @@ This project showcases a lane detection system for vehicles with front-facing ca
 
 To maintain a clean and isolated Python environment for your "ADAS-Undergraduate-Research" project, follow these steps in your terminal:
 
-```bash
 ## Navigate to the Project Directory
 cd ADAS-Undergraduate-Research/
 
