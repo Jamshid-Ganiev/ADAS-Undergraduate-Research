@@ -59,4 +59,34 @@ The Python script `laneDetection.py` processes a provided dashcam footage of a c
 
 - **perspectiveWarp()**: Performs a perspective warp by defining 4 points around the lane area, creating a bird's-eye view for accurate lane curvature detection. Note that the warp parameters may need adjustment for different camera angles or videos.
 
+### Lane Detection, Curve Fitting & Calculations
+
+#### plotHistogram()
+Generates a histogram for the bottom half of the image to identify the starting positions of the left and right lanes. The peaks in the histogram indicate these positions.
+
+#### slide_window_search()
+Uses a sliding window approach to detect lanes and their curvature. Starting from the histogram results, it positions boxes on the lanes, moving upward to the top of the frame. It fits a second-degree polynomial to obtain a curve in pixel space.
+
+#### general_search()
+Building upon the results from `slide_window_search()`, this function fills an area around the detected lanes and performs a second-degree polynomial fit. A yellow line is drawn accurately representing the lanes. This line aids in measuring lane curvature, which is crucial for steering angle prediction.
+
+#### measure_lane_curvature()
+Uses `np.polyfit()` with pixel-to-meter conversion factors (`xm_per_pix` and `ym_per_pix`) to convert lane data from pixel space to meter space for curvature calculations.
+
+### Visualization and Main Function
+
+#### draw_lane_lines()
+Visualizes the detected lanes by filling them with green color and representing the lane center with a yellowish color. This function also calculates the vehicle's lateral offset.
+
+#### offCenter()
+Calculates the vehicle's offset using the `pts_mean` variable and displays it in meter space.
+
+#### addText()
+Adds text to the final image, providing relevant information.
+
+#### main()
+The main function orchestrates the sequence of function calls, including the video processing loop.
+
+
+
 
