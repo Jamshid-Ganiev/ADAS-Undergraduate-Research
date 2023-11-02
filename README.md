@@ -9,6 +9,7 @@ This project showcases a lane detection system for vehicles with front-facing ca
 [![Watch the video](https://img.youtube.com/vi/SskEn38OWqc/0.jpg | width=400)](https://www.youtube.com/watch?v=SskEn38OWqc)
 
 
+
 ## Get This Project Up and Running
 
 ## Setting up a Python Virtual Environment for "ADAS-Undergraduate-Research"
