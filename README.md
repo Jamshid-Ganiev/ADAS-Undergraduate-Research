@@ -4,6 +4,11 @@ Lane detection, steering control, obstacle recognition, and traffic sign detecti
 ## Project Description & Objective
 This project showcases a lane detection system for vehicles with front-facing cameras, a crucial part of advanced driver assistance systems (ADAS) in autonomous and semi-autonomous vehicles. It detects lanes, measures curve radius, and monitors center offset, enhancing safety and comfort. The repository provides dashcam footage for testing and development.
 
+## Demo Video:
+
+[![Watch the video](https://img.youtube.com/vi/SskEn38OWqc/0.jpg)](https://www.youtube.com/watch?v=SskEn38OWqc)
+
+
 
 ## Get This Project Up and Running
 
