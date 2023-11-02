@@ -6,9 +6,8 @@ This project showcases a lane detection system for vehicles with front-facing ca
 
 ## Demo Video:
 
-<a href="https://www.youtube.com/watch?v=SskEn38OWqc">
-  <img src="thumbnail.png" width="400" alt="Watch the video">
-</a>
+[![Watch the video](https://img.youtube.com/vi/SskEn38OWqc/0.jpg)](https://www.youtube.com/watch?v=SskEn38OWqc)
+
 
 
 
