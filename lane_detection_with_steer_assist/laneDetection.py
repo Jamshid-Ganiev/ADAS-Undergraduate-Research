@@ -241,7 +241,7 @@ def general_search(binary_warped, left_fit, right_fit):
 
     cv2.fillPoly(window_img, np.int_([left_line_pts]), (0, 255, 0))
     cv2.fillPoly(window_img, np.int_([right_line_pts]), (0, 255, 0))
-    result = cv2.addWeighted(out_img, 1, window_img, 0.3, 0)
+    result = cv2.addWeighted(out_img, 1, window_img, 0.2, 0)
 
     # plt.imshow(result)
     plt.plot(left_fitx,  ploty, color = 'yellow')
